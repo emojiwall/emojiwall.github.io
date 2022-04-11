@@ -1,0 +1,27 @@
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script>
+      emoji = ['🥰','😍','💋','💌','💘','💝','💖','💗','💓','💞','💕','💟','❣️','❤️']
+      function main() {
+        num = 60
+        res = ''
+        for (i=0;i<num;i++) {
+          r = Math.floor(Math.random() * (emoji.length -1))
+          document.getElementById('res').innerHTML += '<span> ' + emoji[r] + ' </span>'
+
+        }
+      }
+    </script>
+  </head>
+  <body>
+    <h1>
+      Say no to emoji walls...
+    </h1>
+    <div>
+      <button onclick="main()">click me</button>
+      <div id="res"></div>
+    </div>
+  </body>
+</html>
